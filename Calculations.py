@@ -3,26 +3,31 @@ def MainCalculations(HeroList,OverwatchInfo,ListHeroes,ListCounters,ListOfListCo
   ListSynergies = []
   TierList = []
   for b in range(6):
-    Hero = input("Find Data for what Hero: ")
-    for i in range(array_length):
-      if Hero == OverwatchInfo[i][0]:
-        print(OverwatchInfo[i])
-        print(i)
-        ListHeroes.append(OverwatchInfo[i][0])
-        ListSynergies.append(OverwatchSynergies[i])
-        ListCounters.append(OverwatchCounters[i])
-        print(ListHeroes)
-        print(ListCounters)
-      else:
-        i =+ 1
+      def ClickedLucio():
+        Hero = "Lucio"
+      def ClickedReinhardt():
+       Hero = "Reinhardt"
+        for i in range(array_length):
+          if Hero == OverwatchInfo[i][0]:
+            print(OverwatchInfo[i])
+            print(i)
+            ListHeroes.append(OverwatchInfo[i][0])
+            ListSynergies.append(OverwatchSynergies[i])
+            ListCounters.append(OverwatchCounters[i])
+            print(ListHeroes)
+            print(ListCounters)
+          else:
+            i =+ 1
   #Get Tiers
   tierMode = input("Tier mode on? ")
   if tierMode == 1:
     for _ in range(array_length):
       TierList.append(OverwatchInfo[_][6])
+      _ =+ 1
   else:
-    for _ in range(array_length):
-      TierList.append(0)
+    for m in range(array_length):
+       TierList.append(0)
+       m =+ 1
   print(OverwatchCounters)
   Hero1C = ListCounters[0]
   Hero2C = ListCounters[1]
