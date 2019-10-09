@@ -1,102 +1,48 @@
-HeroList = ["Ana","Ashe","Bastion","Baptiste","Brigitte","D.Va","Doomfist","Genji","Hanzo","Junkrat","Lucio","Mccree","Mei","Mercy","Moira","Orisa","Pharah","Reaper","Reinhardt","Roadhog","Soldier 76","Sombra","Symmetra","Torbjorn","Tracer","Widowmaker","Winston","Hammond","Zarya","Zenyatta","Sigma"]
-LuicoInfo = ["Lucio","Support","",200,0,0,75,0]
-LucioCounters = [10,0,0,0,0,0,10,20,10,10,0,-10,10,0,0,-10,10,10,0,10,0,-10,0,0,10,0,10,0,-10,0,10]
-LucioSynergies = [10,0,0,0,10,0,10,10,0,0,0,10,10,0,10,0,-10,10,10,10,0,0,10,10,0,-10,10,0,10,10,0]
-ReinhardtInfo = ["Reinhardt","Tank","",300,0,200,75,2000]
-ReinhardtCounters = [0,0,-20,0,-10,0,-10,-10,-10,-10,0,10,-10,0,0,-10,-10,-20,0,-10,0,-20,-10,0,-10,10,0,0,0,0,10]
-ReinhardtSynergies = [10,10,0,20,10,10,0,0,0,0,10,10,10,0,10,-10,0,0,0,0,10,10,0,10,0,0,-10,0,10,0,0]
-McCreeInfo = ["McCree","Damage","",200,0,0]
-McCreeCounters = [0,0,0,-10,0,-10,0,0,-10,0,10,0,-10,10,0,0,10,10,-10,-10,10,10,0,10,20,-10,-10,0,0,0,0]
-McCreeSynergies = [10,0,10,0,0,0,0,0,0,0,-10,0,10,10,0,0,0,0,10,0,0,10,10,0,0,0,0,10,0,0,0]
-MercyInfo = ["Mercy","Support","",200,0,0,85,0]
-MercyCounters = [0,-20,0,0,0,0,0,-20,0,0,0,-10,0,0,0,0,0,0,0,0,-10,-10,0,0,0,0,0,0,0,0,0]
-MercySynergies = [0,10,10,10,0,0,0,10,10,10,0,10,0,0,-10,0,10,0,0,0,10,0,10,0,0,10,10,0,0,10,0]
-ZaryaInfo = ["Zarya","Tank","",200,200,0,75]
-ZaryaCounters = [10,0,-10,0,0,20,-10,0,-10,10,-10,0,0,0,0,0,-10,10,0,10,0,-10,0,20,10,-10,10,0,0,-10,10]
-ZaryaSynergies = [10,0,0,0,10,10,10,10,10,10,10,0,10,0,10,-10,10,10,10,0,0,10,0,10,10,0,10,10,0,10,0]
-DVaInfo = ["D.Va","Tank","",400,0,200]
-DVaCounters = [10,20,10,10,-10,0,-10,10,10,10,0,10,-10,0,10,10,10,10,0,10,10,10,0,0,10,20,0,0,-10,10,10]
-DVaSynergies = [0,10,0,0,0,0,0,10,0,10,0,0,10,0,0,10,10,10,10,0,0,10,10,0,10,0,10,10,10,10,0]
-GenjiInfo = ["Genji","Damage","Flanker",200,0,0]
-GenjiCounters = [10,0,10,0,-10,0,-10,0,20,10,-20,0,-10,20,-10,10,-10,0,10,0,-10,-10,0,-10,-10,20,-20,0,-20,10,0]
-GenjiSynergies = [10,10,0,0,0,10,10,0,0,0,20,0,0,10,0,0,10,0,0,0,0,10,0,0,10,0,10,10,10,10,0]
-JunkratInfo = ["Junkrat","Damage","Spammer",200,0,0]
-JunkratCounters = [0,-20,20,-10,20,0,0,0,0,0,0,0,10,0,0,0,-20,10,20,0,0,10,0,20,10,-20,0,20,-10,0,0]
-JunkratSynergies = [0,0,0,0,0,10,0,0,0,0,20,0,0,10,0,10,0,0,0,0,0,10,0,0,0,10,0,0,10,10,0]
-PharahInfo = ["Pharah","Damage","Spammer",200,0,0]
-PharahCounters = [-10,-20,0,-10,20,-10,20,-10,0,20,0,-20,10,0,0,0,0,20,20,0,-10,0,20,0,10,-20,0,10,10,0,10]
-PharahSynergies = [0,0,0,0,0,10,0,10,0,0,10,0,0,10,-10,0,0,0,0,0,0,10,0,0,10,0,10,10,10,10,0]
-ReaperInfo = ["Reaper","Damage","Flanker",250,0,0]
-ReaperCounters = [-10,-10,0,0,0,-10,0,0,0,-10,-10,-10,0,0,0,20,-20,0,20,20,0,-10,0,0,-10,-20,20,10,-10,0,10]
-ReaperSynergies = [10,0,0,0,0,10,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,10,0,10,10,0]
-RoadhogInfo = ["Roadhog","Tank","",600,0,0]
-RoadhogCounters = [0,0,10,0,-10,-10,0,0,-10,0,-10,10,-20,0,0,10,0,-20,10,0,10,10,0,0,0,0,20,20,-10,0,-10]
-RoadhogSynergies = [0,0,0,0,0,0,0,0,0,0,10,0,0,0,10,10,0,0,0,0,0,0,0,0,0,0,-10,0,0,0,0]
-Soldier76Info = ["Soldier 76","Damage","",200,0,0]
-Soldier76Counters = [0,-10,10,10,10,-10,10,10,0,0,0,-10,0,0,0,0,10,0,0,0,0,10,0,20,10,-10,0,-10,0,0,-10]
-Soldier76Synergies = [10,0,10,0,0,0,0,0,0,0,0,0,0,10,0,10,0,0,10,0,0,10,0,0,0,0,10,10,0,10,0]
-SymmetraInfo = ["Symmetra","Damage","",100,100,0]
-SymmetraCounters = [0,-20,0,0,0,0,0,0,0,0,20,-10,0,0,0,0,-20,0,10,0,0,-10,0,0,0,0,-20,10,0,0,10]
-SymmetraSynergies = [10,0,0,10,0,10,0,0,0,0,0,10,0,10,0,10,0,0,0,0,0,0,0,10,0,0,0,0,0,10,0]
-WidowmakerInfo = ["Widowmaker","Damage","Sniper",200,0,0]
-WidowmakerCounters = [0,20,10,0,0,-20,0,-20,10,20,0,10,10,0,0,-10,20,20,-10,0,10,10,0,10,0,0,-20,-20,10,0,-10]
-WidowmakerSynergies = [-10,-10,10,0,0,0,10,0,10,10,0,0,0,10,-10,10,0,0,0,0,0,0,0,0,0,0,0,10,0,10,0]
-WinstonInfo = ["Winston","Tank","",400,0,100]
-WinstonCounters = [10,10,-20,10,-20,0,0,20,10,0,-10,10,0,0,0,-10,0,-20,0,-20,0,10,20,-10,0,20,0,0,0,20,10]
-WinstonSynergies = 10,10,0,0,0,10,10,10,0,0,10,0,0,10,-10,-10,10,10,-10,-10,10,10,0,0,10,0,0,10,10,10,0
-HanzoInfo = ["Hanzo","Damage","Sniper",200,0,0]
-HanzoCounters = [0,0,10,-10,10,-20,0,-20,0,0,-10,10,0,0,0,10,0,0,0,10,0,10,0,20,10,-10,-10,-10,0,0,0]
-HanzoSynergies = [10,10,0,0,0,10,10,10,0,0,0,10,10,0,0,10,10,0,0,0,10,10,0,0,10,10,10,0,10,10,0]
-MeiInfo = ["Mei","Damage","",250,0,0]
-MeiCounters = [0,-10,0,0,0,10,0,0,0,-10,-10,10,0,0,0,-10,-10,0,20,20,0,20,0,0,0,-10,0,10,-10,0,10]
-MeiSynergies = [0,0,0,0,0,10,0,0,0,0,10,10,0,0,0,10,0,0,10,0,0,10,0,0,0,0,0,10,10,0,0]
-TracerInfo = ["Tracer","Damage","Flanker",150,0,0]
-TracerCounters = [0,0,10,-20,-10,0,0,0,-10,-10,-10,-20,0,0,0,0,-10,10,0,0,0,-20,0,-10,0,0,0,-10,-10,20,0]
-TracerSynergies = [0,10,0,0,0,10,10,10,0,0,10,0,0,0,0,10,10,0,0,0,0,10,0,0,0,0,10,10,10,10,0]
-BastionInfo = ["Bastion","Damage","",200,0,100]
-BastionCounters = [-10,0,0,0,20,-10,0,-10,-10,-20,0,0,0,0,0,0,0,0,20,-10,-10,-20,0,0,-10,-10,20,20,-10,0,-10]
-BastionSynergies = [0,0,10,0,0,0,0,0,0,0,0,0,0,10,0,10,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0]
-TorbjornInfo = ["Torbjorn","Damage","",200,0,0]
-TorbjornCounters = [0,0,0,0,0,0,0,10,-20,-20,10,0,-10,0,0,-10,10,0,0,0,-20,0,0,0,20,-10,10,0,-20,-10,0]
-TornjornSynergies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,10,0,0,10,10,0,0,0,0,0,10,0,0]
-ZenyattaInfo = ["Zenyatta","Support","",50,150,0]
-ZenyattaCounters = [-10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-20,10,0,0,-20,0,0,-20,0,0,-10,10,0,0]
-ZenyattaSynergies = [0,10,0,0,10,10,10,10,10,10,0,0,0,10,-10,10,10,10,0,0,10,0,10,0,10,10,10,10,10,0,0]
-AnaInfo = ["Ana","Support","",200,0,0]
-AnaCounters = [0,10,10,0,0,-10,0,-10,0,0,10,0,0,0,10,0,10,10,0,0,0,-10,0,10,0,0,-10,10,0,10,-10]
-AnaSynergies = [0,-10,0,0,0,0,0,10,-10,0,10,10,0,0,-10,0,0,10,10,0,10,0,10,0,0,-10,10,10,10,0,0]
-SombraInfo = ["Sombra","Damage","Flanker",200,0,0]
-SombraCounters = [10,0,20,10,10,0,20,10,-10,-10,10,-10,-20,0,0,0,0,10,10,-10,-10,0,10,0,20,-10,-10,20,10,20,0]
-SombraSynergies = [0,10,0,0,0,10,10,10,0,10,-10,10,10,0,0,0,10,10,10,0,10,0,0,10,10,0,10,10,10,0,0]
-OrisaInfo = ["Orisa","Tank","",200,0,200]
-OrisaCounters = [0,10,10,0,0,0,10,-10,-10,0,10,0,10,0,-10,0,0,-20,0,-10,0,0,0,10,0,10,10,10,0,0,-10]
-OrisaSynergies = [0,0,10,20,0,10,10,0,10,10,0,0,10,0,0,0,0,0,-10,10,0,0,10,10,10,10,-10,10,-10,10,0]
-DoomfistInfo = ["Doomfist","Damage","",250,0,0]
-DoomfistCounters = [0,-10,0,10,-10,10,0,10,0,0,-10,0,0,0,0,-10,-20,0,10,0,-10,-20,0,0,0,0,0,0,0,0,10]
-DoomfistSynergies = [0,0,0,0,0,0,0,10,0,0,10,0,0,0,0,10,0,0,0,0,0,10,0,0,10,10,10,10,10,10,0]
-MoiraInfo = ["Moira","Support","",200,0,0]
-MoiraCounters = [-10,0,0,0,0,-10,0,10,0,0,0,0,0,0,0,10,0,0,10,0,0,0,0,0,0,0,0,0,0,0,10]
-MoiraSynergies = [-10,-10,0,0,0,0,0,0,0,0,0,0,0,-10,0,0,-10,0,10,10,0,0,0,0,0,-10,-10,0,10,-10,0]
-BrigitteInfo = ["Brigitte","Support","",200,0,50]
-BrigitteCounters = [0,-10,-20,0,0,10,0,10,-10,-20,0,0,0,0,0,0,-20,-10,10,10,-10,-10,0,0,10,0,10,10,0,0,-10]
-BrigitteSynergies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,10,10,0]
-HammondInfo = ["Hammond","Tank","",500,0,100]
-HammondCounters = [-10,0,20,10,-10,0,0,0,10,-20,0,10,-10,0,0,-10,-10,-10,10,-20,10,-20,-10,0,10,20,0,0,0,20,10]
-HammondSynergies = [10,10,0,0,0,10,10,10,0,0,0,10,10,0,0,10,10,0,0,0,10,10,0,0,10,10,10,0,10,10,0]
-AsheInfo = ["Ashe","Damage","Sniper",200,0,0]
-AsheCounters = [-10,0,0,-10,10,-20,10,0,0,20,0,0,10,20,0,-10,20,10,10,0,10,0,20,0,0,-20,-10,0,0,0,0]
-AsheSynergies = [-10,0,10,0,0,10,0,10,0,0,0,0,0,10,-10,0,0,0,10,0,0,10,0,0,10,-10,10,10,0,10,0]
-BaptisteInfo = ["Baptiste","Support","",200,0,0]
-BaptisteCounters = [0,10,0,0,0,-10,-10,0,10,10,0,10,0,0,0,0,10,0,0,0,-10,-10,0,0,20,0,-10,-10,0,0,10]
-BaptisteSynergies = [0,10,0,10,0,0,0,0,10,0,0,10,0,10,0,10,0,0,0,0,10,0,0,0,0,10,0,0,0,0,0]
-SigmaInfo = ["Sigma","Tank","",200,200,0]
-SigmaCounters = [10,0,10,-10,10,-10,-10,0,0,0,-10,0,-10,0,-10,10,-10,-10,-10,10,10,0,-10,0,0,10,-10,-10,-10,0,0]
-SigmaSynergies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-OverwatchInfo = [LuicoInfo,ReinhardtInfo,McCreeInfo,MercyInfo,ZaryaInfo,DVaInfo,GenjiInfo,JunkratInfo,PharahInfo,ReaperInfo,RoadhogInfo,Soldier76Info,SymmetraInfo,WidowmakerInfo,WinstonInfo,HanzoInfo,MeiInfo,TracerInfo,BastionInfo,TorbjornInfo,ZenyattaInfo,AnaInfo,SombraInfo,OrisaInfo,DoomfistInfo,MoiraInfo,BrigitteInfo,HammondInfo,AsheInfo,BaptisteInfo,SigmaInfo]
-OverwatchCounters = [LucioCounters,ReinhardtCounters,McCreeCounters,MercyCounters,ZaryaCounters,DVaCounters,GenjiCounters,JunkratCounters,SymmetraCounters,WidowmakerCounters,WinstonCounters,HanzoCounters,MeiCounters,TracerCounters,BastionCounters,TorbjornCounters,ZenyattaCounters,AnaCounters,SombraCounters,OrisaCounters,DoomfistCounters,MoiraCounters,BrigitteCounters,HammondCounters,AsheCounters,BaptisteCounters,SigmaCounters]
-array_length = len(HeroList)
-ListHeroes = []
-ListCounters = []
-ListOfListCounters = []
-import Calculations
-Calculations.MainCalculations(HeroList,OverwatchInfo,ListHeroes,ListCounters,ListOfListCounters,array_length,OverwatchCounters);
+def MainCalculations(HeroList,OverwatchInfo,ListHeroes,ListCounters,ListOfListCounters,array_length,OverwatchCounters,OverwatchSynergies):
+  print(HeroList)
+  ListSynergies = []
+  TierList = []
+  for b in range(6):
+    Hero = input("Find Data for what Hero: ")
+    for i in range(array_length):
+      if Hero == OverwatchInfo[i][0]:
+        print(OverwatchInfo[i])
+        print(i)
+        ListHeroes.append(OverwatchInfo[i][0])
+        ListSynergies.append(OverwatchSynergies[i])
+        ListCounters.append(OverwatchCounters[i])
+        print(ListHeroes)
+        print(ListCounters)
+      else:
+        i =+ 1
+  #Get Tiers
+  tierMode = input("Tier mode on? ")
+  if tierMode == 1:
+    for _ in range(array_length):
+      TierList.append(OverwatchInfo[_][6])
+  else:
+    for _ in range(array_length):
+      TierList.append(0)
+  print(OverwatchCounters)
+  Hero1C = ListCounters[0]
+  Hero2C = ListCounters[1]
+  Hero3C = ListCounters[2]
+  Hero4C = ListCounters[3]
+  Hero5C = ListCounters[4]
+  Hero6C = ListCounters[5]
+  Hero1S = ListSynergies[0]
+  Hero2S = ListSynergies[1]
+  Hero3S = ListSynergies[2]
+  Hero4S = ListSynergies[3]
+  Hero5S = ListSynergies[4]
+  Hero6S = ListSynergies[5]
+
+  HeroSum1 = []
+  c = 0
+  d = 0
+  for c in range(array_length):
+     HeroSum1.append(Hero1C[c] + Hero2C[c] + Hero3C[c] + Hero4C[c] + Hero5C[c] + Hero6C[c] + Hero1S[c] + Hero2S[c] + Hero3S[c] + Hero4S[c] + Hero5S[c] + Hero6S[c] + TierList[c])
+     c =+ 1
+  for d in range(array_length):
+    print(HeroList[d],HeroSum1[d])
+    d =+ 1
