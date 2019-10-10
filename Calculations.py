@@ -1,12 +1,14 @@
+# We haven't covered this in tests, but when you have something like this that takes a whole bunch of arguments, its complex. 
+# There is something called the Single Responsibility Principle, read into it and see what adjustments you can make.
 def MainCalculations(HeroList,OverwatchInfo,ListHeroes,ListCounters,ListOfListCounters,array_length,OverwatchCounters,OverwatchSynergies):
   print(HeroList)
   ListSynergies = []
   TierList = []
-  for b in range(6):
-      def ClickedLucio():
+  for b in range(6): # I assume this is number of members in a team, but we should use magic numbers.
+      def ClickedLucio(): # Okay, lets talk about whats going on in these functions. Actually I've no idea what's going on???
         Hero = "Lucio"
       def ClickedReinhardt():
-       Hero = "Reinhardt"
+        Hero = "Reinhardt"
         for i in range(array_length):
           if Hero == OverwatchInfo[i][0]:
             print(OverwatchInfo[i])

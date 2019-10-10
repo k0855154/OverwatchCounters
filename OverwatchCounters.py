@@ -1,13 +1,20 @@
+# Okay, so lets break this up.
+# We've got a list of Heros, Current Heros it seems.
 HeroList = ["Ana","Ashe","Bastion","Baptiste","Brigitte","D.Va","Doomfist","Genji","Hanzo","Junkrat","Lucio","Mccree","Mei","Mercy","Moira","Orisa","Pharah","Reaper","Reinhardt","Roadhog","Soldier 76","Sombra","Symmetra","Torbjorn","Tracer","Widowmaker","Winston","Hammond","Zarya","Zenyatta","Sigma"]
+
+# Next we've got a lot of lists going on, we have some basic Info about the hero, so what is the information in here. It's obvious to you, but not to me.
+# Info = ["Name", "Role", ...] look to comment this and fill it out. 
 LuicoInfo = ["Lucio","Support","",200,0,0,75,0]
+# Counters to me is a list of magic numbers that have no meaning, lets describe what these numbers are and how you came about them.
 LucioCounters = [10,0,0,0,0,0,10,20,10,10,0,-10,10,0,0,-10,10,10,0,10,0,-10,0,0,10,0,10,0,-10,0,10]
+# Same thing with synergies, I understand the term, but what are these numbers representing?
 LucioSynergies = [10,0,0,0,10,0,10,10,0,0,0,10,10,0,10,0,-10,10,10,10,0,0,10,10,0,-10,10,0,10,10,0]
 ReinhardtInfo = ["Reinhardt","Tank","",300,0,200,75,2000]
 ReinhardtCounters = [0,0,-20,0,-10,0,-10,-10,-10,-10,0,10,-10,0,0,-10,-10,-20,0,-10,0,-20,-10,0,-10,10,0,0,0,0,10]
 ReinhardtSynergies = [10,10,0,20,10,10,0,0,0,0,10,10,10,0,10,-10,0,0,0,0,10,10,0,10,0,0,-10,0,10,0,0]
 McCreeInfo = ["McCree","Damage","",200,0,0]
 McCreeCounters = [0,0,0,-10,0,-10,0,0,-10,0,10,0,-10,10,0,0,10,10,-10,-10,10,10,0,10,20,-10,-10,0,0,0,0]
-McCreeSynergies [10,0,10,0,0,0,0,0,0,0,-10,0,10,10,0,0,0,0,10,0,0,10,10,0,0,0,0,10,0,0,0]
+McCreeSynergies = [10,0,10,0,0,0,0,0,0,0,-10,0,10,10,0,0,0,0,10,0,0,10,10,0,0,0,0,10,0,0,0]
 MercyInfo = ["Mercy","Support","",200,0,0,85,0]
 MercyCounters = [0,-20,0,0,0,0,0,-20,0,0,0,-10,0,0,0,0,0,0,0,0,-10,-10,0,0,0,0,0,0,0,0,0]
 MercySynergies = [0,10,10,10,0,0,0,10,10,10,0,10,0,0,-10,0,10,0,0,0,10,0,10,0,0,10,10,0,0,10,0]
@@ -92,11 +99,14 @@ BaptisteSynergies = [0,10,0,10,0,0,0,0,10,0,0,10,0,10,0,10,0,0,0,0,10,0,0,0,0,10
 SigmaInfo = ["Sigma","Tank","",200,200,0]
 SigmaCounters = [10,0,10,-10,10,-10,-10,0,0,0,-10,0,-10,0,-10,10,-10,-10,-10,10,10,0,-10,0,0,10,-10,-10,-10,0,0]
 SigmaSynergies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+# So we are making now a List of HeroInfo and a List of CounterInfo. This looks complex, I have an idea of how you can improve this.
 OverwatchInfo = [LuicoInfo,ReinhardtInfo,McCreeInfo,MercyInfo,ZaryaInfo,DVaInfo,GenjiInfo,JunkratInfo,PharahInfo,ReaperInfo,RoadhogInfo,Soldier76Info,SymmetraInfo,WidowmakerInfo,WinstonInfo,HanzoInfo,MeiInfo,TracerInfo,BastionInfo,TorbjornInfo,ZenyattaInfo,AnaInfo,SombraInfo,OrisaInfo,DoomfistInfo,MoiraInfo,BrigitteInfo,HammondInfo,AsheInfo,BaptisteInfo,SigmaInfo]
 OverwatchCounters = [LucioCounters,ReinhardtCounters,McCreeCounters,MercyCounters,ZaryaCounters,DVaCounters,GenjiCounters,JunkratCounters,SymmetraCounters,WidowmakerCounters,WinstonCounters,HanzoCounters,MeiCounters,TracerCounters,BastionCounters,TorbjornCounters,ZenyattaCounters,AnaCounters,SombraCounters,OrisaCounters,DoomfistCounters,MoiraCounters,BrigitteCounters,HammondCounters,AsheCounters,BaptisteCounters,SigmaCounters]
+# This seems unnecessary and unneeded always. We can discuss why.
 array_length = len(OverwatchInfo)
 ListHeroes = []
 ListCounters = []
 ListOfListCounters = []
 import Calculations
-MainCalculations()
+# This fails here, you didn't give any arguments
+# Calculations.MainCalculations()
